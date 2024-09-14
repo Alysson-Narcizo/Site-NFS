@@ -1,0 +1,37 @@
+/* Estilo global do site */
+body {
+    background: linear-gradient(135deg, #001f3f, #003366);
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #000;
+    border-bottom: 2px solid #0055ff;
+}
+
+.navbar-brand {
+    color: #0055ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 0 0 5px #0055ff, 0 0 10px #0044cc;
+}
+
+/* Estilo dos títulos dos carros */
+h2 {
+    color: white; /* Definir a cor branca para os títulos dos carros */
+    font-size: 2rem;
+    text-shadow: 0 0 5px #0055ff, 0 0 10px #0044cc; /* Adiciona brilho ao título */
+}
+
+/* Estilo das imagens */
+.car-image {
+    border: 3px solid #0055ff;
+    box-shadow: 0 0 10px #0055ff, 0 0 20px #0044cc;
+    margin-bottom: 20px; /* Espaçamento entre as imagens */
+}

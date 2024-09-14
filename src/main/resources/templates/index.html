@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos de carros - Tema NFS High Stakes</title>
+
+    <!-- Arquivos de CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="botao-voltar.css">
+    <link rel="stylesheet" href="fundo-tela.css">
+
+    <!-- CSS do Bootstrap e AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Carros Exóticos do NFS</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Título com imagem de fundo -->
+    <div class="container mt-5 title-background">
+        <h1 class="text-center">"Máquinas que me marcaram"</h1>
+    </div>
+
+    <!-- Conteúdo com animações -->
+    <div class="container mt-5">
+        <!-- Links para cada carro -->
+        <div class="row mb-3">
+            <div class="col text-center">
+                <a href="#carro1" class="btn btn-primary btn-lg">Mclaren F1 GT LongTail</a>
+            </div>
+            <div class="col text-center">
+                <a href="#carro2" class="btn btn-primary btn-lg">Lamborghini Diablo</a>
+            </div>
+            <div class="col text-center">
+                <a href="#carro3" class="btn btn-primary btn-lg">Mercedes CLK-GTR</a>
+            </div>
+            <div class="col text-center">
+                <a href="#carro4" class="btn btn-primary btn-lg">Porsche 911</a>
+            </div>
+        </div>
+
+        <!-- Seção de fotos dos carros -->
+        <div class="row" id="carro1" data-aos="fade-right" data-aos-duration="1000">
+            <div class="col-md-12 text-center">
+                <h2>Mclaren F1 GT LongTail</h2>
+                <img src="/img/mclaren2.jpg" class="img-fluid car-image img-thumbnail" alt="Mclaren F1 GT LongTail">
+            </div>
+        </div>
+
+        <div class="row" id="carro2" data-aos="fade-left" data-aos-duration="1000">
+            <div class="col-md-12 text-center">
+                <h2>Lamborghini Diablo</h2>
+                <img src="/img/diablo.webp" class="img-fluid car-image img-thumbnail" alt="Lamborghini Diablo">
+            </div>
+        </div>
+
+        <div class="row" id="carro3" data-aos="fade-right" data-aos-duration="1000">
+            <div class="col-md-12 text-center">
+                <h2>Mercedes CLK-GTR</h2>
+                <img src="/img/mercedes.jpg" class="img-fluid car-image img-thumbnail" alt="Mercedes CLK-GTR">
+            </div>
+        </div>
+
+        <div class="row" id="carro4" data-aos="fade-left" data-aos-duration="1000">
+            <div class="col-md-12 text-center">
+                <h2>Porsche 911</h2>
+                <img src="/img/911.webp" class="img-fluid car-image img-thumbnail" alt="Porsche 911">
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão de voltar ao topo -->
+    <button id="scrollTopBtn" class="btn btn-primary">
+        Voltar ao Topo
+    </button>
+
+    <!-- Scripts do AOS e Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Mostrar/Esconder o botão de voltar ao topo
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollTopBtn.style.display = 'block';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        });
+
+        // Funcionalidade do botão de voltar ao topo
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+   
+</body>
+</html>
